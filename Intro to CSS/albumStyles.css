@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  font-variant: small-caps;
+  font-family: 'Open Sans', sans-serif;
+}
+h2 {
+  font-size:90%;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+table {
+  width:80%;
+}
+#members {
+  width:80%;
+  margin:30px auto 60px auto;
+}
+.bandMember {
+  font-size:20px;
+  font-weight:500;
+  font-variant: small-caps;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+#trackList {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:200;
+}

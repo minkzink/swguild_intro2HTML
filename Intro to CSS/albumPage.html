@@ -1,21 +1,36 @@
 <html>
   <head>
     <title>The Joshua Tree</title>
+    <style>
+      #releasedate {
+        text-align:center;
+        font-weight:700;
+        font-variant: small-caps;
+        color: #207692;
+      }
+      #trk {
+        font-size:24px;
+      }
+    </style>
+    <link href="albumStyles.css"
+          rel="stylesheet"
+          type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
     <p style="text-align:center;"><img src="https://upload.wikimedia.org/wikipedia/en/6/6b/The_Joshua_Tree.png" style="margin-left:auto; margin-right:auto; width:25%;">
-    <h1 style="text-align:center;">The Joshua Tree</h1>
-    <a href="http://www.u2.com/"><p style="text-align:center;">U2</p></a>
-    <h3 style="text-align:center;">Release Date: 09 March 1987</h3>
+    <h1>The Joshua Tree</h1>
+    <a href="http://www.u2.com/" target="_blank"><p style="text-align:center;">U2</p></a>
+    <h2 id="releasedate">Release Date: 09 March 1987</h2>
     <hr />
-    <h3 style="text-align:center;">Band Members and Producers</h3>
-    <p>Bono - Lead Vocals</p>
-    <p>The Edge - Guitar</p>
-    <p>Adam Clayton - Bass Guitar</p>
-    <p>Larry Mullins Jr. - Drums</p>
-    <table style= border="1" width:"100%">
-      <caption>Tracks</caption>
-      <tr bgcolor=grey>
+    <div id="members"><h3 style="text-align:center;">Band Members and Producers</h3>
+    <p class="bandMember">Bono - Lead Vocals</p>
+    <p class="bandMember">The Edge - Guitar</p>
+    <p class="bandMember">Adam Clayton - Bass Guitar</p>
+    <p class="bandMember">Larry Mullins Jr. - Drums</p></div>
+    <table style= border="1" width:"100%" align=center id="trackList">
+      <caption id="trk">Tracks</caption>
+      <tr bgcolor=grey align=center>
         <th>Track #</th>
         <th>Track Title</th>
         <th>Track Length</th>
