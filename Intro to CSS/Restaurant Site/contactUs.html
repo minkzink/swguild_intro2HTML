@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ginno's Bar &amp; Oyster Joint</title>
+    <link href="restaurantStyles.css"
+          rel="stylesheet"
+          type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <style>
+    /*Menu Section*/
+    menu {
+      background-color: #333;
+      margin:0px;
+      overflow: hidden;
+      width:100%auto;
+    }
+    nav {
+      background-color: #333;
+      margin:0px;
+      overflow:hidden;
+      width:100%;
+    }
+    nav ul li {
+      display: inline-block;
+      list-style-type: none;
+    }
+    nav > ul > li > a {
+      color: #bcbcbc;
+      font-family: 'Open Sans', sans-serif;
+      font-weight:700;
+      font-size:30px;
+      line-height: 2em;
+      text-align:center;
+      padding:.5em .5em;
+    }
+    label {
+        font-size: 100%;
+        width: 350px;
+        font-weight: bold;
+        margin: 2px 0;
+    }
+    select {
+      padding: 5px 43px 5px 73px;
+      margin-bottom:20px;
+    }
+    .contactForm input {
+        width: 250px;
+        padding:5px;
+        margin: 8px 0;
+    }
+    .contactForm {
+      margin-top:40px;
+      margin-bottom:40px;
+      margin-left: 40px;
+    }
+    #radioAndChecks {
+      margin-left:40px;
+    }
+    #submitForm input {
+      width: 400px;
+      padding: 5px;
+      margin: 2px 0px 40px 50px;
+    }
+
+    </style>
+  </head>
+  <header>
+    <h1 class="siteTitle" style="text-align:center;">Ginno's Bar &amp; Oyster Joint</h1>
+  </header>
+  <menu>
+    <nav>
+      <ul>
+        <li><a href="file:///C:/repos/Intro To CSS/Restaurant%20Site/index.html">Home</a></li>
+        <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/menu.html">Menu</a></li>
+        <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/contactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </menu>
+  <body>
+    <div class="contactForm">
+    <form action="fakePage.html" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="Name" />
+        <br/>
+        <label for="email">Email:</label>
+        <input type="text" name="Email" />
+        <br/>
+        <label for="phone">Phone:</label>
+        <input type="text" name="Phone" />
+        <br/>
+        <label for="reason">Reason for Inquiry:</label>
+          <select name="Reason">
+                  <option value="Catering">Catering</option>
+                  <option value="PrivateParty">Private Party</option>
+                  <option value="Feedback">Feedback</option>
+                  <option value="Other">Other</option></select>
+        <br/>
+        <label for="AddInfo">Additional Information:</label>
+        <textarea name="AdditionalInfo"></textarea>
+        <br/></div>
+        <div id="radioAndChecks"><label for ="haveYouEver">Have You Ever Been To The Restaurant?:</label>
+        <input type="radio" name="patronage" value="Yes" checked/> Yes <input type="radio" name="patronage" value="No"> No
+        <br/>
+        <label for="bestDays">Best Days to Contact You:</label>
+        <input type="checkbox">M <input type="checkbox">T<input type="checkbox">W<input type="checkbox">Th<input type="checkbox">F</p></div>
+        <div id="submitForm"><input type="submit"></div>
+  </body>
+  <footer>
+    <hr />
+    <p style="text-align:center;">1503 West Westchester Blvd. Queens, NY 00481</p>
+    <p style="text-align:center;">(555) 401-5190</p>
+  </footer>
+</html>
