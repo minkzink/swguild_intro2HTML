@@ -1,13 +1,13 @@
 h1 {
   text-align: center;
   font-variant: small-caps;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Passion One', cursive;
+  font-size: 50px;
 }
 h2 {
   font-size:90%;
 }
 h3 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 table {
@@ -22,9 +22,12 @@ table {
   font-weight:500;
   font-variant: small-caps;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
 }
 #trackList {
-  font-family: 'Open Sans', sans-serif;
   font-weight:200;
+}
+#cdArt {
+  height:300px;
+  background: url("https://upload.wikimedia.org/wikipedia/en/6/6b/The_Joshua_Tree.png") no-repeat scroll 50% 0px;
 }
