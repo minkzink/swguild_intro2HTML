@@ -2,8 +2,17 @@
 .siteTitle, h1 {
   font-family:'Barrio', sans-serif;
   font-weight: 700;
+  margin-top:0px;
+  padding: 20px 0;
+}
+header {
+  background-color:#fff;
 }
 /*Body*/
+body {
+  background-color:#A73636;
+  margin:0px;
+}
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -17,7 +26,4 @@ footer {
 footer p {
   color: white;
   pading:0 20px;
-}
-div {
-  background: url("https://pixabay.com/get/e83cb80f2af2093ed1584d05fb0938c9bd22ffd41db9194692f1c57ca3/hong-kong-1990268_1280.jpg") no-repeat scroll center;
 }

@@ -29,7 +29,7 @@
       color: #bcbcbc;
       font-family: 'Open Sans', sans-serif;
       font-weight:700;
-      font-size:30px;
+      font-size:25px;
       line-height: 2em;
       text-align:center;
       padding:.5em .5em;
@@ -37,7 +37,6 @@
     label {
         font-size: 100%;
         width: 350px;
-        font-weight: bold;
         margin: 2px 0;
     }
     select {
@@ -62,34 +61,36 @@
       padding: 5px;
       margin: 2px 0px 40px 50px;
     }
-
+    .requiredLabel {
+      font-weight:bold;
+    }
     </style>
   </head>
   <header>
     <h1 class="siteTitle" style="text-align:center;">Ginno's Bar &amp; Oyster Joint</h1>
+    <menu>
+      <nav>
+        <ul>
+          <li><a href="file:///C:/repos/Intro To CSS/Restaurant%20Site/index.html">Home</a></li>
+          <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/menu.html">Menu</a></li>
+          <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </menu>
   </header>
-  <menu>
-    <nav>
-      <ul>
-        <li><a href="file:///C:/repos/Intro To CSS/Restaurant%20Site/index.html">Home</a></li>
-        <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/menu.html">Menu</a></li>
-        <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/contactUs.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </menu>
   <body>
     <div class="contactForm">
     <form action="fakePage.html" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" name="Name" />
+        <span class="requiredLabel"><label for="name">Name:</label></span>
+        <input type="text" name="Name" required/>
         <br/>
-        <label for="email">Email:</label>
+        <span class="requiredLabel"><label for="email" required>Email:</label</span>
         <input type="text" name="Email" />
         <br/>
         <label for="phone">Phone:</label>
         <input type="text" name="Phone" />
         <br/>
-        <label for="reason">Reason for Inquiry:</label>
+        <span class="requiredLabel"><label for="reason">Reason for Inquiry:</label></span>
           <select name="Reason">
                   <option value="Catering">Catering</option>
                   <option value="PrivateParty">Private Party</option>
