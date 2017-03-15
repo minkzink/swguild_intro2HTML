@@ -1,0 +1,4 @@
+Total Height: 150px
+Total Width: 400px
+Browser Calculated Height: 20px (margin-top) + 10px (padding-top) + 1px (border-top) + 150px (content) + 1px (border-bottom) + 10px (padding-bottom) + 20px (margin-bottom) = 212px
+Browser Calculated Width: 20px (margin-left) + 10px (padding-left) + 1px (border-left) + 400px (content)  + 1px (border-right) + 10px (padding-right) + 20px (margin-right) = 462px
