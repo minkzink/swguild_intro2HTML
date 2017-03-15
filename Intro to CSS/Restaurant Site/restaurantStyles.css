@@ -1,7 +1,7 @@
 /*Header*/
 .siteTitle, h1 {
   font-family:'Barrio', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin-top:0px;
   padding: 20px 0;
 }
@@ -16,6 +16,17 @@ body {
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+}
+a:visited {
+  color: #ff9e9e;
+  text-decoration: none;
+}
+a:hover {
+  font-weight:700;
+}
+a:active {
+  color: #ffffff;
+  text-decoration: none;
 }
 /*Footer*/
 footer {
