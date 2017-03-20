@@ -7,6 +7,13 @@
           type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style>
     /*Menu Section*/
     menu {
@@ -40,25 +47,29 @@
     <h1 class="siteTitle" style="text-align:center;">Ginno's Bar &amp; Oyster Joint</h1>
     <menu>
       <nav>
-        <ul>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant%20Site/index.html">Home</a></li>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/menu.html">Menu</a></li>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/contactUs.html">Contact Us</a></li>
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+          <li role="presentation"><a href="menu.html">Menu</a></li>
+          <li role="presentation"><a href="contactUs.html">Contact Us</a></li>
         </ul>
       </nav>
     </menu>
   </header>
   <body>
-    <p style="text-align:center; margin: 0px 0;"><img src="https://static.pexels.com/photos/5249/bread-food-restaurant-people.jpg" alt="Image of a Couple Eating at Gino's Bar and Oyster Joint" style="width:100%; height:auto; margin: 0px"></p>
-    <table border="1">
+    <div class="jumbotron">
+  <h1 style="padding-left:4%;padding-right:4%;padding-top:180px;color:#fff;font-family:'Barrio', sans-serif;">We're Expanding!</h1>
+  <h2 style="padding-left:4%;padding-right:4%;font-variant:small-caps;color:#fff;">New Location Opening in Brooklyn!</h2>
+  <p style="padding-left:4%;padding-right:4%;padding-top:40px;padding-bottom:140px"><a class="btn btn-primary btn-lg" href="contactUs.html" role="button">Inquire Now</a></p>
+</div>
+    <table border="0">
       <tr>
         <td>
-          <p style="padding: 0 15px;">
+          <h3 style="padding: 0 40px;">
             At Ginno's bar &amp; Oyster Joint we believe that
             our customers are our future. That's why we take
             care of you just like mama would by providing you
             with healthy yet delicious options for your dining
-            convenience and pleasure.</p>
+            convenience and pleasure.</h3>
           </td>
         </tr>
       </table>
@@ -66,4 +77,6 @@
     <footer>
       <hr />
       <p style="text-align:center;">1503 West Westchester Blvd. Queens, NY 00481</p>
-      <p style="text-align:center;">(555) 401-5190
+      <p style="text-align:center;">(555) 401-5190</p>
+    </footer>
+  </html>

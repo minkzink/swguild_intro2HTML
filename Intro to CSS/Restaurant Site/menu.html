@@ -7,6 +7,13 @@
           type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style>
     /*Menu Section*/
     menu {
@@ -43,73 +50,83 @@
     <h1 class="siteTitle" style="text-align:center;">Ginno's Bar &amp; Oyster Joint</h1>
     <menu>
       <nav>
-        <ul>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant%20Site/index.html">Home</a></li>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/menu.html">Menu</a></li>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/contactUs.html">Contact Us</a></li>
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+          <li role="presentation" class="active"><a href="menu.html">Menu</a></li>
+          <li role="presentation"><a href="contactUs.html">Contact Us</a></li>
         </ul>
       </nav>
     </menu>
   </header>
   <body>
-    <table style="width:100%;">
-      <tr>
-        <td><h2 class="menuItemTitle"style="text-align:center;">Burger and Fries</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="menuItemTitle"style="text-align:center;">Burger and Fries</h2>
         <p style="text-align:center;">An American Classic</p>
         <p style="text-align:center;">Your Choice - with or without cheese<br> Pickle, onion, tomato, and lettuce<br> Served with our famous thick cut french fries</p>
-        <p style="text-align:center;"><em>$7.95</em></p></td>
-        <td><h2 class="menuItemTitle" style="text-align:center;">Hot Dog and Chips</h2>
+        <p style="text-align:center;"><em>$7.95</em></p>
+      </div>
+      <div class="col-md-4">
+        <h2 class="menuItemTitle" style="text-align:center;">Hot Dog and Chips</h2>
         <p style="text-align:center;">A Summer Classic</p>
         <p style="text-align:center;">Your Choice - white or wheat bun<br> Relish, mustard, and ketchup<br> Served with our house-made chips</p>
-        <p style="text-align:center;"><em>$7.95</em></p></td>
-        <td><h2 class="menuItemTitle" style="text-align:center;">Italian Sausage and Peppers</h2>
+        <p style="text-align:center;"><em>$7.95</em></p>
+      </div>
+      <div class="col-md-4">
+        <h2 class="menuItemTitle" style="text-align:center;">Italian Sausage and Peppers</h2>
         <p style="text-align:center;">An All-Time Favorite!!</p>
         <p style="text-align:center;">Your Choice - mild or spicy<br>Cole Slaw<br>Served with garlic mashers</p>
-        <p style="text-align:center;"><em>$10.95</em></p></td>
-      </tr>
-      <tr>
-        <td><h2 class="menuItemTitle" style="text-align:center;">Tenderloin Sandwich and Chips</h2>
+        <p style="text-align:center;"><em>$10.95</em></p>
+      </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="menuItemTitle" style="text-align:center;">Tenderloin Sandwich and Chips</h2>
         <p style="text-align:center;">Really Hits the Spot</p>
         <p style="text-align:center;">Plain or Sesame Seed Bun<br> Pickle, onion, tomato, and lettuce<br> Served with our house-made chips</p>
-        <p style="text-align:center;"><em>$8.95</em></p></td>
-        <td><h2 class="menuItemTitle" style="text-align:center;">House Salad</h2>
+        <p style="text-align:center;"><em>$8.95</em></p>
+      </div>
+      <div class="col-md-4">
+        <h2 class="menuItemTitle" style="text-align:center;">House Salad</h2>
         <p style="text-align:center;">On the Lighter Side</p>
         <p style="text-align:center;">Your Choice - with or without cheese<br> Iceberg lettuce, tomatoes, peppers<br> Thousand Island or Ranch Dressing<br>Served with a dinner roll</p>
-        <p style="text-align:center;"><em>$6.95</em></p></td>
-        <td><h2 class="menuItemTitle" style="text-align:center;">Bisket Sandwich and Fries</h2>
+        <p style="text-align:center;"><em>$6.95</em></p>
+      </div>
+      <div class="col-md-4">
+        <h2 class="menuItemTitle" style="text-align:center;">Bisket Sandwich and Fries</h2>
         <p style="text-align:center;">A Taste of Texas!</p>
         <p style="text-align:center;">Smoked brisket on thick-cut Texas Toast<br>Cole Slaw<br> Served with our famous thick cut french fries</p>
-        <p style="text-align:center;"><em>$7.95</em></p></td>
-      </tr>
-    </table>
-    <table style="margin-left:auto; margin-right:auto;width:25%;padding-bottom:30px;">
-      <thead>
-        <caption class="menuItemTitle" style="text-align:center;"><h2>Beverages</h2></caption>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Root Beer</td>
-          <td>$3.00</td>
-        </tr>
-        <tr>
-          <td>Bottled Water</td>
-          <td>$1.25</td>
-        </tr>
-        <tr>
-          <td>Lemonade</td>
-          <td>$1.00</td>
-        </tr>
-        <tr>
-          <td>Iced Tea</td>
-          <td>$1.25</td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-  <footer>
+        <p style="text-align:center;"><em>$7.95</em></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h2 class="menuItemTitle" style="text-align:center;">Beverages</h2>
+         <div class="row">
+            <div class="col-md-6"><h4 style="text-align:right;">Root Beer</h4></div>
+            <div class="col-md-6"><h4 style="text-align:left;">$3.00</h4></div>
+          </div>
+          <div class="row">
+              <div class="col-md-6"><h4 style="text-align:right;">Bottled Water</h4></div>
+              <div class="col-md-6"><h4 style="text-align:left;">$1.25</h4></div>
+          </div>
+          <div class="row">
+              <div class="col-md-6"><h4 style="text-align:right;">Lemonade</h4></div>
+              <div class="col-md-6"><h4 style="text-align:left;">$1.00</h4></div>
+          </div>
+          <div class="row">
+              <div class="col-md-6"><h4 style="text-align:right;">Iced Tea</h4></div>
+              <div class="col-md-6"><h4 style="text-align:left;">$1.25</h4></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+    </body>
+    <footer>
     <hr />
     <p style="text-align:center;">1503 West Westchester Blvd. Queens, NY 00481</p>
     <p style="text-align:center;">(555) 401-5190</p>
-  </footer>
-  </html>
+    </footer>
+</html>

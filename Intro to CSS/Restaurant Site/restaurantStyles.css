@@ -5,6 +5,11 @@
   margin-top:0px;
   padding: 20px 0;
 }
+.jumbotron {
+  background-image:url('https://static.pexels.com/photos/5249/bread-food-restaurant-people.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+}
 header {
   background-color:#fff;
 }

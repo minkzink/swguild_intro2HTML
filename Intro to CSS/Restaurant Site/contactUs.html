@@ -7,6 +7,14 @@
           type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <style>
     /*Menu Section*/
     menu {
@@ -70,42 +78,67 @@
     <h1 class="siteTitle" style="text-align:center;">Ginno's Bar &amp; Oyster Joint</h1>
     <menu>
       <nav>
-        <ul>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant%20Site/index.html">Home</a></li>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/menu.html">Menu</a></li>
-          <li><a href="file:///C:/repos/Intro To CSS/Restaurant Site/contactUs.html">Contact Us</a></li>
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+          <li role="presentation"><a href="menu.html">Menu</a></li>
+          <li role="presentation" class="active"><a href="contactUs.html">Contact Us</a></li>
         </ul>
       </nav>
     </menu>
   </header>
   <body>
-    <div class="contactForm">
-    <form action="fakePage.html" method="POST">
-        <span class="requiredLabel"><label for="name">Name:</label></span>
-        <input type="text" name="Name" required/>
-        <br/>
-        <span class="requiredLabel"><label for="email" required>Email:</label</span>
-        <input type="text" name="Email" />
-        <br/>
-        <label for="phone">Phone:</label>
-        <input type="text" name="Phone" />
-        <br/>
-        <span class="requiredLabel"><label for="reason">Reason for Inquiry:</label></span>
-          <select name="Reason">
-                  <option value="Catering">Catering</option>
-                  <option value="PrivateParty">Private Party</option>
-                  <option value="Feedback">Feedback</option>
-                  <option value="Other">Other</option></select>
-        <br/>
-        <label for="AddInfo">Additional Information:</label>
-        <textarea name="AdditionalInfo"></textarea>
-        <br/></div>
-        <div id="radioAndChecks"><label for ="haveYouEver">Have You Ever Been To The Restaurant?:</label>
-        <input type="radio" name="patronage" value="Yes" checked/> Yes <input type="radio" name="patronage" value="No"> No
-        <br/>
-        <label for="bestDays">Best Days to Contact You:</label>
-        <input type="checkbox">M <input type="checkbox">T<input type="checkbox">W<input type="checkbox">Th<input type="checkbox">F</p></div>
-        <div id="submitForm"><input type="submit"></div>
+  <div class="container">
+    <h1>Contact Us</h1>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="InputEmail">Email address</label>
+    <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="Phone">Phone</label>
+    <input type="email" class="form-control" id="Phone" placeholder="Phone">
+  </div>
+  <div class="form-group">
+    <label for="reason">Reason</label>
+    <select name="Reason" class="form-control">
+      <option value="Catering"></option>
+      <option value="PrivateParty"></option>
+      <option value="Feedback">Feedback</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+  <label for="AddInfo">Additional Information:</label>
+  <textarea class="form-control" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for "form-control">What is the best day to contact you? (CTRL + Click to Select Multiple Days):</label>
+    <select multiple class="form-control">
+      <option>Monday</option>
+      <option>Tuesday</option>
+      <option>Wednesday</option>
+      <option>Thursday</option>
+      <option>Friday</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for "radio-inline">Have you Ever Been to Our Restaurant?:</label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+    </label>
+  </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-default">Submit</button>
+</div>
+</form>
+</div>
+
   </body>
   <footer>
     <hr />
