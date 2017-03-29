@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>This is a testing platform</title>
+  <script type="text/javascript">
+    function greetTheUser () {
+      document.getElementById("favColor").innerText = document.getElementById("inputColor").value;
+      document.getElementById("greeting").style.display = "block";
+    }
+    </script>
+  </head>
+  <body>
+    <div>
+      Enter your Favorite Colour: <input type="text" id="inputColor" placeholder="Type Favorite Color" />
+      <button onclick="greetTheUser();">Drumroll Please!</button>
+    </div>
+    <div id = "greeting" style="display:none;">
+      <h1>Your Favorite Color is: <span id="favColor"></span>!</h1>
+    </div>
+  </body>
+</html>
